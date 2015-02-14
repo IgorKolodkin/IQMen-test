@@ -15,7 +15,7 @@ saveas(gcf, fname, 'png')
 fname = ['../Figures/Exploratory_figures/',plotname, '.fig'];
 saveas(gcf, fname, 'fig')
 %%
-plotname = 'plotmatrix_N_classes';
+plotname = 'Classes';
 fname = ['../Figures/Final_figures/',plotname, '.png'];
 saveas(gcf, fname, 'png')
 %% Гистограммы всех признаков

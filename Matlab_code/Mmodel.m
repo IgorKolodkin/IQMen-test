@@ -44,7 +44,7 @@ for f=1:length(fq)
     R = [x, x(:, 1).*x(:, 2), x.^2];
     y = Y(XJ==factors{fq(f)}, :);
     lm{f} = fitlm(R,y,'linear');
-    lm{f};
+    lm{f}
     STAT(f, :) = [lm{f}.RMSE, lm{f}.Rsquared.Adjusted];
     v(f) = length(x);
     param(f, :) = [mean(y), std(y)]
